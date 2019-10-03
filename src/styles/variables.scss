@@ -1,0 +1,23 @@
+
+$primary_font_family: 'Raleway', 'sans-serif';
+$primary_font_family_semibold: 'Raleway', 'semi-bold';
+
+
+//Color
+
+$colors: (
+  primary: #0044CC,
+  primary-light: lighten(#0044CC,30%),
+  blue-gradient:-webkit-linear-gradient(#0044CC,#0d65ff),
+  primary-dark: darken(#005DFF, 40%),
+  danger: #E74C3C,
+  green: #2ECC71,
+  yellow: #FFE000,
+  white: rgb(255, 255, 255),
+  black: rgb(0, 0, 0),
+  blacklow:lighten(#000000, 70%)
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+};
